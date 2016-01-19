@@ -1,0 +1,234 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/*定义坦克头部样式*/
+.tank{
+	width: 350px;
+	height: 350px;
+	margin: 0 auto;
+	position: relative;
+	left: 0px;
+	top: 400px;
+	animation: move 5s;
+	-webkit-animation: move 5s;
+	-moz-animation: move 5s;
+}
+.tankhead{
+	width: 335px;
+	height: 42px;
+}
+.head_1{
+	width: 100px;
+	height: 40px;
+	border: 2px solid #000;
+	margin-left: 110px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 50px;
+	background-color: red;
+	background-color: #009966;
+}
+.head_2{
+	width: 100px;
+	height: 20px;
+	border: 2px solid #000;
+	background-color: #009966;
+	margin-left: 160px;
+	position: relative;
+	left: 30px;
+	top: -45px;
+	z-index: -1;
+	transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	animation: launch 0.5s infinite;
+	-webkit-animation: launch 0.5s infinite;
+	-moz-animation: launch 0.5s infinite;
+	animation-delay:5s;
+	-webkit-animation-delay:5s;
+	-moz-animation-delay:5s;
+}
+.head_3{
+	width: 20px;
+	height: 35px;
+	border: 2px solid #000;
+	background-color: #009966;
+	margin-left: 260px;
+	position: relative;
+	left: 30px;
+	top: -88px;
+	border-radius: 20px;
+	transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	animation: shoot 0.5s infinite;
+	-webkit-animation: shoot 0.5s infinite;
+	-moz-animation: shoot 0.5s infinite;
+	animation-delay:5s;
+	-webkit-animation-delay:5s;
+	-moz-animation-delay:5s;
+}
+.head_4{
+	width: 20px;
+	height: 20px;
+	margin-left: 260px;
+	background-color: #FF0033;
+	position: relative;
+	left: 30px;
+	top: -120px;
+	border-radius: 20px;
+	z-index: -1;
+	transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	animation: fire 0.5s infinite;
+	-webkit-animation: fire 0.5s infinite;
+	-moz-animation: fire 0.5s infinite;
+	animation-delay:5s;
+	-webkit-animation-delay:5s;
+	-moz-animation-delay:5s;
+}
+/*定义坦克车身样式*/
+.tankbody{
+	width: 335px;
+	height: 42px;
+}
+.body_1{
+	width: 200px;
+	height: 40px;
+	border: 2px solid #000;
+	margin-left: 60px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	background-color: #009966;
+}
+/*定义坦克车轮样式*/
+.tankwheel{
+	width: 335px;
+	height: 70px;
+	border: 2px solid #000;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background-color: #009966;
+	box-shadow: 0 10px 10px #669933;
+}
+.tankwheel div{
+	background-color: #669999;
+}
+.wheel_1{
+	width: 35px;
+	height: 35px;
+	float: left;
+	border: 2px solid #000;
+	border-radius: 18.5px;
+}
+.wheel_2{
+	width: 35px;
+	height: 35px;
+	float: right;
+	border: 2px solid #000;
+	border-radius: 19.5px;
+}
+.wheel_3{
+	width: 56px;
+	height: 56px;
+	position: relative;
+	left: 40px;
+	top: 11px;
+	border: 2px solid #000;
+	border-radius: 30px;
+}
+.wheel_4{
+	width: 56px;
+	height: 56px;
+	position: relative;
+	left: 105px;
+	top: -49px;
+	border: 2px solid #000;
+	border-radius: 30px;
+}
+.wheel_5{
+	width: 56px;
+	height: 56px;
+	position: relative;
+	left: 170px;
+	top: -109px;
+	border: 2px solid #000;
+	border-radius: 30px;
+}
+.wheel_6{
+	width: 56px;
+	height: 56px;
+	position: relative;
+	left: 235px;
+	top: -169px;
+	border: 2px solid #000;
+	border-radius: 30px;
+}
+/*定义坦克行走的keyframe*/
+@keyframes move
+{
+from  {left:-400px; top:400px;}
+to    {left:0px; top:400px;}
+}
+@-webkit-keyframes move
+{
+from  {left:-400px; top:400px;}
+to    {left:0px; top:400px;}
+}
+@-moz-keyframes move
+{
+from  {left:-400px; top:400px;}
+to    {left:0px; top:400px;}
+}
+/*定义坦克头部炮筒的keyframe*/
+@keyframes launch
+{
+from  {left:30px; top:-45px;}
+to    {left:25px; top:-45px;}
+}
+@-webkit-keyframes launch
+{
+from  {left:30px; top:-45px;}
+to    {left:25px; top:-45px;}
+}
+@-moz-keyframes launch
+{
+from  {left:30px; top:-45px;}
+to    {left:25px; top:-45px;}
+}
+
+@keyframes shoot
+{
+from  {left:30px; top:-88px;}
+to    {left:25px; top:-88px;}
+}
+@-webkit-keyframes shoot
+{
+from  {left:30px; top:-88px;}
+to    {left:25px; top:-88px;}
+}
+@-moz-keyframes shoot
+{
+from  {left:30px; top:-88px;}
+to    {left:25px; top:-88px;}
+}
+/*定义坦克炮弹的keyframe*/
+@keyframes fire
+{
+from   {left:30px; top:-120px;}
+to {left:300px; top:-165px;}
+}
+@-webkit-keyframes fire
+{
+from   {left:30px; top:-120px;}
+to {left:300px; top:-165px;}
+}
+@-moz-keyframes fire
+{
+from   {left:30px; top:-120px;}
+to {left:300px; top:-165px;}
+}
+
